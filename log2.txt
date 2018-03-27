@@ -1,0 +1,589 @@
+ext4load mmc 0:1 48000000 uImage␍␊
+[11:16:00:309] s5p4418# ␍␊
+[11:16:00:311] s5p4418# setenv bootargs 'console=ttyAMA0,115200n8 root=/dev/mmcblk0p1 ro rootfstype=ext4 rootwait init=/sbin/init systemd.show_status=false g_ether.host_addr=82:cf:ce:fa:44:18'␍␊
+[11:16:06:430] s5p4418# ␍␊
+[11:16:06:431] s5p4418# bootm 48000000␍␊
+[11:16:14:914] ## Booting kernel from Legacy Image at 48000000 ...␍␊
+[11:16:14:918]    Image Name:   Linux-3.4.39-s5p4418␍␊
+[11:16:14:922]    Image Type:   ARM Linux Kernel Image (uncompressed)␍␊
+[11:16:14:928]    Data Size:    4435648 Bytes = 4.2 MiB␍␊
+[11:16:14:931]    Load Address: 40008000␍␊
+[11:16:14:933]    Entry Point:  40008000␍␊
+[11:16:14:935]    Verifying Checksum ... OK␍␊
+[11:16:14:977]    Loading Kernel Image ... OK␍␊
+[11:16:15:095] ␍␊
+[11:16:15:095] Starting kernel ...␍␊
+[11:16:15:104] ␍␊
+[11:16:15:631] [    0.000000] Booting Linux on physical CPU 0␍␊
+[11:16:15:636] [    0.000000] Initializing cgroup subsys cpuset␍␊
+[11:16:15:639] [    0.000000] Initializing cgroup subsys cpu␍␊
+[11:16:15:645] [    0.000000] Linux version 3.4.39-s5p4418 (vnpro@vnpro-Vostro-3559) (gcc version 4.9.3 (ctng-1.21.0-229g-FA) ) #1 SMP PREEMPT Sat Mar 24 13:11:53 +07 2018␍␊
+[11:16:15:659] [    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d␍␊
+[11:16:15:664] [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache␍␊
+[11:16:15:672] [    0.000000] Machine: NANOPI2␍␊
+[11:16:15:675] [    0.000000] nxp_reserve_mem: reserve CMA: size 201326592␍␊
+[11:16:15:680] [    0.000000] NXP/CMA: Reserved 0x63600000/0x0c000000 for 'ion'␍␊
+[11:16:15:688] [    0.000000] NXP/CMA: success register cma region for 'ion'␍␊
+[11:16:15:694] [    0.000000] Memory policy: ECC disabled, Data cache writealloc␍␊
+[11:16:15:697] [    0.000000] CPU : iomap[ 0]: p 0xc0000000 -> v 0xf0000000 len=0x300000␍␊
+[11:16:15:706] [    0.000000] CPU : iomap[ 1]: p 0xf0000000 -> v 0xf0300000 len=0x100000␍␊
+[11:16:15:712] [    0.000000] CPU : iomap[ 2]: p 0xcf000000 -> v 0xf0400000 len=0x100000␍␊
+[11:16:15:717] [    0.000000] CPU : iomap[ 3]: p 0x2c000000 -> v 0xf0500000 len=0x100000␍␊
+[11:16:15:723] [    0.000000] CPU : iomap[ 4]: p 0x00000000 -> v 0xf0600000 len=0x100000␍␊
+[11:16:15:734] [    0.000000] CPU : DMA Zone Size =16M, CORE 4␍␊
+[11:16:15:734] [    0.000000] CPU : VERSION = 2 (0xE153000A), Assign Peripheral Exclusive Bus␍␊
+[11:16:15:745] [    0.000000] s5p4418-NanoPi2: Board initialized␍␊
+[11:16:15:746] [    0.000000] CPU : Clock Generator= 64 EA, DVFS = support, PLL.1␍␊
+[11:16:15:755] [    0.000000] PLL : [0] =  550000000, [1] = 1200000000, [2] =  800000000, [3] =  614399000␍␊
+[11:16:15:759] [    0.000000] PLL1: CPU FCLK = 1200000000, HCLK = 300000000␍␊
+[11:16:15:769] [    0.000000] PLL2: BUS BCLK =  400000000, PCLK = 200000000␍␊
+[11:16:15:773] [    0.000000] PLL2: MEM MCLK =  800000000, DCLK = 800000000, BCLK = 400000000, PCLK = 200000000␍␊
+[11:16:15:779] [    0.000000] PLL0: G3D BCLK =  550000000␍␊
+[11:16:15:783] [    0.000000] PLL2: MPG BCLK =  400000000, PCLK = 200000000␍␊
+[11:16:15:788] [    0.000000] PERCPU: Embedded 9 pages/cpu @c1298000 s12352 r8192 d16320 u36864␍␊
+[11:16:15:795] [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 259839␍␊
+[11:16:15:803] [    0.000000] Kernel command line: console=ttyAMA0,115200n8 root=/dev/mmcblk0p1 ro rootfstype=ext4 rootwait init=/sbin/init systemd.show_status=false g_ether.host_addr=82:cf:ce:fa:44:18␍␊
+[11:16:15:819] [    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)␍␊
+[11:16:15:825] [    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)␍␊
+[11:16:15:837] [    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)␍␊
+[11:16:15:839] [    0.000000] allocated 2097152 bytes of page_cgroup␍␊
+[11:16:15:844] [    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups␍␊
+[11:16:15:855] [    0.000000] Memory: 1024MB = 1024MB total␍␊
+[11:16:15:860] [    0.000000] Memory: 829928k/829928k available, 218648k reserved, 272384K highmem␍␊
+[11:16:15:866] [    0.000000] Virtual kernel memory layout:␍␊
+[11:16:15:871] [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)␍␊
+[11:16:15:876] [    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)␍␊
+[11:16:15:881] [    0.000000]     vmalloc : 0xef800000 - 0xfee00000   ( 246 MB)␍␊
+[11:16:15:887] [    0.000000]     lowmem  : 0xc0000000 - 0xef600000   ( 758 MB)␍␊
+[11:16:15:892] [    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)␍␊
+[11:16:15:897] [    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)␍␊
+[11:16:15:902] [    0.000000]       .text : 0xc0008000 - 0xc07f9590   (8134 kB)␍␊
+[11:16:15:908] [    0.000000]       .init : 0xc07fa000 - 0xc0832040   ( 225 kB)␍␊
+[11:16:15:913] [    0.000000]       .data : 0xc0834000 - 0xc08b3598   ( 510 kB)␍␊
+[11:16:15:919] [    0.000000]        .bss : 0xc08b35bc - 0xc098e6d8   ( 877 kB)␍␊
+[11:16:15:925] [    0.000000] SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1␍␊
+[11:16:15:932] [    0.000000] Preemptible hierarchical RCU implementation.␍␊
+[11:16:15:937] [    0.000000] NR_IRQS:288␍␊
+[11:16:15:942] [    0.000000] VIC @f0002000: id 0x00041192, vendor 0x41␍␊
+[11:16:15:948] [    0.000000] VIC @f0003000: id 0x00041192, vendor 0x41␍␊
+[11:16:15:953] [    0.000000] GPIO  @f001a000: start  64, mask 0xffffffff (gpio 53)␍␊
+[11:16:15:958] [    0.000000] GPIO  @f001b000: start  96, mask 0xffffffff (gpio 54)␍␊
+[11:16:15:963] [    0.000000] GPIO  @f001c000: start 128, mask 0xffffffff (gpio 55)␍␊
+[11:16:15:969] [    0.000000] GPIO  @f001d000: start 160, mask 0xffffffff (gpio 56)␍␊
+[11:16:15:974] [    0.000000] GPIO  @f001e000: start 192, mask 0xffffffff (gpio 57)␍␊
+[11:16:15:980] [    0.000000] ALIVE @f0010800: start 224, mask 0x000000ff (alive 4)␍␊
+[11:16:15:989] [    0.000000] GIC   @f0301000: start 256 (vic 31)␍␊
+[11:16:15:995] [    0.000000] timer.0: source,  10000000(HZ:250), mult:3355443200␍␊
+[11:16:16:000] [    0.000000] timer.1: event ,  10000000(HZ:250), mult:42949673␍␊
+[11:16:16:005] [    0.000000] sched_clock: 32 bits at 250 Hz, resolution 4000000ns, wraps every 4294967292ms␍␊
+[11:16:16:010] [    0.000000] Console: colour dummy device 80x30␍␊
+[11:16:16:015] [    0.000000] Calibrating delay loop... 2390.01 BogoMIPS (lpj=4780032)␍␊
+[11:16:16:021] [    0.036000] pid_max: default: 32768 minimum: 301␍␊
+[11:16:16:026] [    0.036000] Security Framework initialized␍␊
+[11:16:16:031] [    0.036000] SELinux:  Initializing.␍␊
+[11:16:16:036] [    0.036000] Mount-cache hash table entries: 512␍␊
+[11:16:16:041] [    0.036000] Initializing cgroup subsys cpuacct␍␊
+[11:16:16:046] [    0.036000] Initializing cgroup subsys memory␍␊
+[11:16:16:051] [    0.036000] Initializing cgroup subsys devices␍␊
+[11:16:16:057] [    0.036000] Initializing cgroup subsys freezer␍␊
+[11:16:16:057] [    0.036000] CPU: Testing write buffer coherency: ok␍␊
+[11:16:16:062] [    0.036000] CPU0: thread -1, cpu 0, socket 10, mpidr 80000a00␍␊
+[11:16:16:066] [    0.036000] hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available␍␊
+[11:16:16:077] [    0.036000] Setting up static identity map for 0x405ee588 - 0x405ee5e0␍␊
+[11:16:16:082] [    0.036000] L310 cache controller enabled␍␊
+[11:16:16:087] [    0.036000] l2x0: 16 ways, CACHE_ID 0x4100c4c8, AUX_CTRL 0x70470001, Cache size: 1048576 B␍␊
+[11:16:16:093] [    0.076000] CPU1: thread -1, cpu 1, socket 10, mpidr 80000a01␍␊
+[11:16:16:099] [    0.108000] CPU2: thread -1, cpu 2, socket 10, mpidr 80000a02␍␊
+[11:16:16:104] [    0.140000] CPU3: thread -1, cpu 3, socket 10, mpidr 80000a03␍␊
+[11:16:16:110] [    0.140000] Brought up 4 CPUs␍␊
+[11:16:16:115] [    0.140000] SMP: Total of 4 processors activated (9560.06 BogoMIPS).␍␊
+[11:16:16:119] [    0.140000] devtmpfs: initialized␍␊
+[11:16:16:124] [    0.144000] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4␍␊
+[11:16:16:134] [    0.144000] pwm: max = 50000000 hz␍␊
+[11:16:16:134] [    0.144000] prepare_gpio_suspend:␍␊
+[11:16:16:139] [    0.144000]   alfn[0][0]: 0x00000000, alfn[0][1]: 0x00000000␍␊
+[11:16:16:144] [    0.144000]   alfn[1][0]: 0x66800000, alfn[1][1]: 0x55555566␍␊
+[11:16:16:149] [    0.144000]   alfn[2][0]: 0x55555555, alfn[2][1]: 0x00555555␍␊
+[11:16:16:157] [    0.144000]   alfn[3][0]: 0x00000000, alfn[3][1]: 0x00000000␍␊
+[11:16:16:162] [    0.144000]   alfn[4][0]: 0x00000000, alfn[4][1]: 0x55540000␍␊
+[11:16:16:167] [    0.144000] dummy: ␍␊
+[11:16:16:172] [    0.144000] NET: Registered protocol family 16␍␊
+[11:16:16:172] [    0.144000] [Register machine platform devices]␍␊
+[11:16:16:177] [    0.144000] mach: add amba device uart-pl011.0 ␍␊
+[11:16:16:182] [    0.144000] mach: add amba device uart-pl011.1 ␍␊
+[11:16:16:187] [    0.144000] mach: add amba device uart-pl011.2 ␍␊
+[11:16:16:192] [    0.144000] mach: add amba device uart-pl011.3 ␍␊
+[11:16:16:197] [    0.144000] mach: add amba device uart-pl011.4 ␍␊
+[11:16:16:201] [    0.144000] mach: add amba device pl08xdmac.0 ␍␊
+[11:16:16:206] [    0.144000] mach: add amba device pl08xdmac.1 ␍␊
+[11:16:16:211] [    0.144000] mach: add amba device ssp-pl022.0 ␍␊
+[11:16:16:216] [    0.148000] mach: add device syncgen [2]␍␊
+[11:16:16:216] [    0.148000] mach: add device lcd ␍␊
+[11:16:16:222] [    0.148000] mach: add device i2c bus (array:3) ␍␊
+[11:16:16:226] [    0.148000] mach: add device Real Time Clock  ␍␊
+[11:16:16:231] [    0.148000] mach: add device generic pwm (array:4)␍␊
+[11:16:16:235] [    0.148000] mach: add device generic gpio (array:6)␍␊
+[11:16:16:240] [    0.152000] mach: add device i2s (array:1) ␍␊
+[11:16:16:245] [    0.152000] mach: add device spdif tx␍␊
+[11:16:16:249] [    0.152000] mach: add device usb_ehci␍␊
+[11:16:16:249] [    0.152000] mach: add device usb_ohci␍␊
+[11:16:16:255] [    0.152000] mach: add device usb otg␍␊
+[11:16:16:259] [    0.152000] mach: add device ion-nxp␍␊
+[11:16:16:264] [    0.152000] mach: add device adc␍␊
+[11:16:16:264] [    0.152000] mach: add graphic device opengl|es␍␊
+[11:16:16:269] [    0.152000] [Register board platform devices]␍␊
+[11:16:16:273] [    0.152000] plat: board revision 1␍␊
+[11:16:16:277] [    0.152000] plat: reset USB hub␍␊
+[11:16:16:282] [    0.152000] plat: add dynamic frequency (pll.1)␍␊
+[11:16:16:286] [    0.152000] plat: add device adc temp␍␊
+[11:16:16:291] [    0.152000] plat: add framebuffer␍␊
+[11:16:16:291] [    0.152000] plat: boot from mmc.0␍␊
+[11:16:16:296] [    0.152000] plat: add device sdmmc [0]␍␊
+[11:16:16:300] [    0.152000] plat: add device sdmmc [1]␍␊
+[11:16:16:305] [    0.152000] plat: add device sdmmc [2]␍␊
+[11:16:16:305] [    0.152000] plat: add backlight pwm device␍␊
+[11:16:16:310] [    0.152000] plat: add device keypad␍␊
+[11:16:16:314] [    0.152000] plat: add device spdif playback␍␊
+[11:16:16:319] [    0.152000] plat: add device asoc-es8316␍␊
+[11:16:16:323] [    0.152000] plat: add device nxp-v4l2␍␊
+[11:16:16:328] [    0.156000] plat: register spidev␍␊
+[11:16:16:328] [    0.156000] plat: add touch(ft5x0x) device␍␊
+[11:16:16:333] [    0.156000] plat: add touch(goodix) device␍␊
+[11:16:16:337] [    0.156000] plat: goodix: irq=144 (80)␍␊
+[11:16:16:342] [    0.156000] plat: add touch(himax) device␍␊
+[11:16:16:346] [    0.156000] plat: add touch(it7260) device␍␊
+[11:16:16:350] [    0.156000] plat: add onewire ts device␍␊
+[11:16:16:355] [    0.156000] plat: add iio adc device␍␊
+[11:16:16:355] [    0.156000] plat: add adxl34x device␍␊
+[11:16:16:360] [    0.156000] plat: add bmp085 device␍␊
+[11:16:16:364] [    0.156000] plat: add ds1307 device␍␊
+[11:16:16:368] [    0.156000] plat: add pcf8591 device␍␊
+[11:16:16:372] [    0.156000] plat: add device nxp-gmac␍␊
+[11:16:16:372] [    0.156000] plat: add device gpio_led␍␊
+[11:16:16:378] [    0.156000] plat: add device pwm_led␍␊
+[11:16:16:382] [    0.156000] ␍␊
+[11:16:16:382] [    0.156000] hw-breakpoint: Debug register access (0xee113e95) caused undefined instruction on CPU 1␍␊
+[11:16:16:390] [    0.156000] hw-breakpoint: Debug register access (0xee113e95) caused undefined instruction on CPU 2␍␊
+[11:16:16:399] [    0.156000] hw-breakpoint: Debug register access (0xee113e95) caused undefined instruction on CPU 3␍␊
+[11:16:16:410] [    0.156000] hw-breakpoint: CPU 2 debug is powered down!␍␊
+[11:16:16:415] [    0.156000] hw-breakpoint: CPU 3 debug is powered down!␍␊
+[11:16:16:419] [    0.156000] hw-breakpoint: CPU 1 debug is powered down!␍␊
+[11:16:16:424] [    0.156000] hw-breakpoint: Debug register access (0xee113e95) caused undefined instruction on CPU 0␍␊
+[11:16:16:433] [    0.156000] hw-breakpoint: CPU 0 debug is powered down!␍␊
+[11:16:16:438] [    0.156000] Serial: AMBA PL011 UART driver␍␊
+[11:16:16:442] [    0.156000] uart-pl011.0: ttyAMA0 at MMIO 0xc00a1000 (irq = 7) is a PL011 rev3␍␊
+[11:16:16:452] [    0.160000] console [ttyAMA0] enabled␍␊
+[11:16:16:457] [    0.164000] uart-pl011.1: ttyAMA1 at MMIO 0xc00a0000 (irq = 6) is a PL011 rev3␍␊
+[11:16:16:462] [    0.168000] uart-pl011.2: ttyAMA2 at MMIO 0xc00a2000 (irq = 8) is a PL011 rev3␍␊
+[11:16:16:472] [    0.172000] uart-pl011.3: ttyAMA3 at MMIO 0xc00a3000 (irq = 9) is a PL011 rev3␍␊
+[11:16:16:479] [    0.176000] uart-pl011.4: ttyAMA4 at MMIO 0xc006d000 (irq = 10) is a PL011 rev3␍␊
+[11:16:16:495] [    0.192000] bio: create slab <bio-0> at 0␍␊
+[11:16:16:504] [    0.200000] gpiochip_add: registered GPIOs 0 to 31 on device: GPIOA␍␊
+[11:16:16:506] [    0.204000] gpiochip_add: registered GPIOs 32 to 63 on device: GPIOB␍␊
+[11:16:16:515] [    0.208000] gpiochip_add: registered GPIOs 64 to 95 on device: GPIOC␍␊
+[11:16:16:520] [    0.212000] gpiochip_add: registered GPIOs 96 to 127 on device: GPIOD␍␊
+[11:16:16:525] [    0.216000] gpiochip_add: registered GPIOs 128 to 159 on device: GPIOE␍␊
+[11:16:16:532] [    0.220000] gpiochip_add: registered GPIOs 160 to 167 on device: GPIOALV␍␊
+[11:16:16:543] [    0.224000] pl08xdmac pl08xdmac.0: Unbalanced pm_runtime_enable!␍␊
+[11:16:16:548] [    0.228000] pl08xdmac pl08xdmac.0: initialized 8 virtual memcpy channels␍␊
+[11:16:16:553] [    0.232000] pl08xdmac pl08xdmac.0: initialized 16 virtual slave channels␍␊
+[11:16:16:563] [    0.236000] pl08xdmac pl08xdmac.0: DMA: PL080 rev1 at 0xc0000000 irq 1␍␊
+[11:16:16:570] [    0.240000] pl08xdmac pl08xdmac.1: Unbalanced pm_runtime_enable!␍␊
+[11:16:16:576] [    0.244000] pl08xdmac pl08xdmac.1: initialized 8 virtual memcpy channels␍␊
+[11:16:16:578] [    0.248000] pl08xdmac pl08xdmac.1: initialized 15 virtual slave channels␍␊
+[11:16:16:590] [    0.252000] pl08xdmac pl08xdmac.1: DMA: PL080 rev1 at 0xc0001000 irq 2␍␊
+[11:16:16:597] [    0.256000] nxp_ion_probe success!!!␍␊
+[11:16:16:597] [    0.260000] SCSI subsystem initialized␍␊
+[11:16:16:602] [    0.264000] ssp-pl022 ssp-pl022.0: ARM PL022 driver, device ID: 0x00041022␍␊
+[11:16:16:607] [    0.268000] pl022: mapped registers from 0xc005b000 to f005b000␍␊
+[11:16:16:613] [    0.272000] ssp-pl022 ssp-pl022.0: setup for DMA on RX dma1chan7, TX dma1chan6␍␊
+[11:16:16:625] [    0.276000] ssp-pl022 ssp-pl022.0: will use autosuspend for runtime pm, delay 10ms␍␊
+[11:16:16:633] [    0.280000] usbcore: registered new interface driver usbfs␍␊
+[11:16:16:634] [    0.284000] usbcore: registered new interface driver hub␍␊
+[11:16:16:639] [    0.288000] usbcore: registered new device driver usb␍␊
+[11:16:16:649] [    0.292000] i2c-gpio i2c-gpio.3: using pins 159 (SDA) and 158 (SCL)␍␊
+[11:16:16:655] [    0.300000] nxp-i2c.0:   390625 hz [pclk=200000000, clk = 256, scale= 1, timeout= 500 ms]␍␊
+[11:16:16:664] [    0.304000] nxp-i2c.1:    97656 hz [pclk=200000000, clk = 256, scale= 7, timeout= 500 ms]␍␊
+[11:16:16:674] [    0.308000] nxp-i2c.2:   195312 hz [pclk=200000000, clk = 256, scale= 3, timeout= 500 ms]␍␊
+[11:16:16:683] [    0.312000] Linux media interface: v0.10␍␊
+[11:16:16:683] [    0.316000] Linux video capture interface: v2.00␍␊
+[11:16:16:689] [    0.320000] pps_core: LinuxPPS API ver. 1 registered␍␊
+[11:16:16:694] [    0.324000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>␍␊
+[11:16:16:705] [    0.328000] PTP clock support registered␍␊
+[11:16:16:715] [    0.336000] axp_mfd 3-0034: AXP (CHIP ID: 0x06) detected␍␊
+[11:16:16:720] [    0.344000] axp22_ldo1: 3000 mV ␍␊
+[11:16:16:727] [    0.348000] axp22_aldo1: 700 <--> 3300 mV at 3300 mV ␍␊
+[11:16:16:736] [    0.356000] axp22_aldo2: 700 <--> 3300 mV at 1800 mV ␍␊
+[11:16:16:745] [    0.364000] axp22_aldo3: 700 <--> 3300 mV at 1000 mV ␍␊
+[11:16:16:753] [    0.372000] axp22_dldo1: 700 <--> 3300 mV at 3300 mV ␍␊
+[11:16:16:763] [    0.376000] axp22_dldo2: No configuration␍␊
+[11:16:16:768] [    0.384000] axp22_dldo2: 700 <--> 3300 mV at 700 mV ␍␊
+[11:16:16:773] [    0.388000] axp22_dldo3: No configuration␍␊
+[11:16:16:778] [    0.392000] axp22_dldo3: 700 <--> 3300 mV at 700 mV ␍␊
+[11:16:16:784] [    0.396000] axp22_dldo4: No configuration␍␊
+[11:16:16:789] [    0.400000] axp22_dldo4: 700 <--> 3300 mV at 700 mV ␍␊
+[11:16:16:795] [    0.408000] axp22_eldo1: 700 <--> 3300 mV at 1800 mV ␍␊
+[11:16:16:807] [    0.416000] axp22_eldo2: 700 <--> 3300 mV at 3300 mV ␍␊
+[11:16:16:814] [    0.420000] axp22_eldo3: No configuration␍␊
+[11:16:16:819] [    0.428000] axp22_eldo3: 700 <--> 3300 mV at 700 mV ␍␊
+[11:16:16:825] [    0.432000] axp22_dc5ldo: No configuration␍␊
+[11:16:16:830] [    0.436000] axp22_dc5ldo: 700 <--> 1400 mV at 1200 mV ␍␊
+[11:16:16:836] [    0.444000] axp22_dcdc1: 1600 <--> 3400 mV at 3300 mV ␍␊
+[11:16:16:848] [    0.452000] axp22_dcdc2: 600 <--> 1540 mV at 1140 mV ␍␊
+[11:16:16:854] [    0.460000] axp22_dcdc3: 600 <--> 1860 mV at 1100 mV ␍␊
+[11:16:16:867] [    0.464000] axp22_dcdc4: 600 <--> 1540 mV at 1500 mV ␍␊
+[11:16:16:872] [    0.472000] axp22_dcdc5: 1000 <--> 2550 mV at 1500 mV ␍␊
+[11:16:16:881] [    0.476000] axp22_ldoio0: 700 <--> 3300 mV at 3800 mV ␍␊
+[11:16:16:888] [    0.480000] axp22_ldoio1: 700 <--> 3300 mV at 3800 mV ␍␊
+[11:16:16:896] [    0.484000] Advanced Linux Sound Architecture Driver Version 1.0.25.␍␊
+[11:16:16:903] [    0.492000] Switching to clocksource source timer␍␊
+[11:16:16:921] [    0.512000] NET: Registered protocol family 2␍␊
+[11:16:16:928] [    0.516000] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)␍␊
+[11:16:16:937] [    0.524000] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)␍␊
+[11:16:16:945] [    0.532000] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)␍␊
+[11:16:16:953] [    0.540000] TCP: Hash tables configured (established 131072 bind 65536)␍␊
+[11:16:16:957] [    0.548000] TCP: reno registered␍␊
+[11:16:16:962] [    0.552000] UDP hash table entries: 512 (order: 2, 16384 bytes)␍␊
+[11:16:16:967] [    0.556000] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)␍␊
+[11:16:16:977] [    0.564000] NET: Registered protocol family 1␍␊
+[11:16:16:978] [    0.568000] RPC: Registered named UNIX socket transport module.␍␊
+[11:16:16:984] [    0.572000] RPC: Registered udp transport module.␍␊
+[11:16:16:989] [    0.580000] RPC: Registered tcp transport module.␍␊
+[11:16:16:993] [    0.584000] RPC: Registered tcp NFSv4.1 backchannel transport module.␍␊
+[11:16:17:004] [    0.592000] Disply Reset Status : On␍␊
+[11:16:17:004] [    0.592000] Display LCD register operation ␍␊
+[11:16:17:009] [    0.600000] Display.0 fps=59 (16 ms), wait= 6 jiffies, Pixelclk=66666666hz␍␊
+[11:16:17:018] [    0.604000] LCD : [1]=LCD connect to [5]=SYNCGEN0␍␊
+[11:16:17:023] [    0.608000] bt_bcm: rfkill initialized␍␊
+[11:16:17:028] [    0.616000] audit: initializing netlink socket (disabled)␍␊
+[11:16:17:033] [    0.620000] type=2000 audit(0.620:1): initialized␍␊
+[11:16:17:038] [    0.624000] highmem bounce pool size: 64 pages␍␊
+[11:16:17:047] [    0.636000] NFS: Registering the id_resolver key type␍␊
+[11:16:17:054] [    0.640000] fuse init (API version 7.18)␍␊
+[11:16:17:059] [    0.644000] msgmni has been set to 1088␍␊
+[11:16:17:064] [    0.648000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)␍␊
+[11:16:17:067] [    0.656000] io scheduler noop registered␍␊
+[11:16:17:072] [    0.660000] io scheduler deadline registered␍␊
+[11:16:17:077] [    0.664000] io scheduler cfq registered (default)␍␊
+[11:16:17:081] [    0.672000] display.0 connected to fb.0  ...␍␊
+[11:16:17:086] [    0.676000] nxp-fb.0: dma addr = 0x63600000, buf[0xe32ce540]␍␊
+[11:16:17:091] [    0.680000] nxp-fb.0: dma addr = 0x639e8000, buf[0xe32ce700]␍␊
+[11:16:17:163] [    0.752000] nxp-fb 0: out[0], 1280 * 800 - 32 bpp (phys:63600000 virt:0xf0800000 max:8192000)␍␊
+[11:16:17:195] [    0.772000] Console: switching to colour frame buffer device 160x50␍␊
+[11:16:17:207] [    0.792000] spu1705: REQ 0x21: i2c xfer error -6␍␊
+[11:16:17:207] [    0.796000] spu1705 3-002d: failed to detect chip␍␊
+[11:16:17:217] [    0.808000] uart-pl011 uart-pl011.0: no DMA platform data␍␊
+[11:16:17:226] [    0.812000] uart-pl011 uart-pl011.1: no DMA platform data␍␊
+[11:16:17:230] [    0.816000] uart-pl011 uart-pl011.2: no DMA platform data␍␊
+[11:16:17:234] [    0.824000] uart-pl011 uart-pl011.3: no DMA platform data␍␊
+[11:16:17:239] [    0.828000] uart-pl011 uart-pl011.4: no DMA platform data␍␊
+[11:16:17:244] [    0.832000] iio-adc⇥	initialized␍␊
+[11:16:17:249] [    0.840000] loop: module loaded␍␊
+[11:16:17:254] [    0.844000] tun: Universal TUN/TAP device driver, 1.6␍␊
+[11:16:17:259] [    0.848000] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>␍␊
+[11:16:17:268] [    0.856000]  -- nxpmac initialize --␍␊
+[11:16:17:268] [    0.856000] stmmac - user ID: 0x37, Synopsys ID: 0x37␍␊
+[11:16:17:273] [    0.864000]  Ring mode enabled␍␊
+[11:16:17:278] [    0.864000]  DMA HW capability register supported␍␊
+[11:16:17:282] [    0.872000]  Enhanced/Alternate descriptors␍␊
+[11:16:17:287] [    0.876000] ⇥	Enabled extended descriptors␍␊
+[11:16:17:292] [    0.880000]  RX Checksum Offload Engine supported (type 2)␍␊
+[11:16:17:297] [    0.884000]  TX Checksum insertion supported␍␊
+[11:16:17:301] [    0.888000]  Wake-Up On Lan supported␍␊
+[11:16:17:306] [    0.892000]  Enable RX Mitigation via HW Watchdog Timer␍␊
+[11:16:17:347] [    0.936000] stmmac: probed␍␊
+[11:16:17:352] [    0.940000] eth0: PHY ID 001cc915 at 0 IRQ 215 (stmmac-0:00)␍␊
+[11:16:17:356] [    0.944000] eth0: PHY ID 001cc915 at 7 IRQ 215 (stmmac-0:07) active␍␊
+[11:16:17:362] [    0.952000] PPP generic driver version 2.4.2␍␊
+[11:16:17:366] [    0.956000] PPP BSD Compression module registered␍␊
+[11:16:17:375] [    0.960000] PPP Deflate Compression module registered␍␊
+[11:16:17:380] [    0.964000] PPP MPPE Compression module registered␍␊
+[11:16:17:381] [    0.972000] NET: Registered protocol family 24␍␊
+[11:16:17:385] [    0.976000] usbcore: registered new interface driver asix␍␊
+[11:16:17:391] [    0.980000] usbcore: registered new interface driver cdc_ether␍␊
+[11:16:17:401] [    0.988000] usbcore: registered new interface driver net1080␍␊
+[11:16:17:405] [    0.992000] usbcore: registered new interface driver cdc_subset␍␊
+[11:16:17:410] [    1.000000] usbcore: registered new interface driver zaurus␍␊
+[11:16:17:415] [    1.004000] usbcore: registered new interface driver cdc_ncm␍␊
+[11:16:17:419] [    1.008000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver␍␊
+[11:16:17:430] [    1.016000] nxp-ehci nxp-ehci: SLsi Synopsys EHCI Host Controller␍␊
+[11:16:17:432] [    1.024000] nxp-ehci nxp-ehci: new USB bus registered, assigned bus number 1␍␊
+[11:16:17:442] [    1.028000] nxp-ehci nxp-ehci: irq 50, io mem 0xc0030000␍␊
+[11:16:17:456] [    1.048000] nxp-ehci nxp-ehci: USB 0.0 started, EHCI 1.00␍␊
+[11:16:17:461] [    1.052000] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002␍␊
+[11:16:17:479] [    1.060000] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1␍␊
+[11:16:17:479] [    1.064000] usb usb1: Product: SLsi Synopsys EHCI Host Controller␍␊
+[11:16:17:489] [    1.072000] usb usb1: Manufacturer: Linux 3.4.39-s5p4418 ehci_hcd␍␊
+[11:16:17:489] [    1.076000] usb usb1: SerialNumber: nxp-ehci␍␊
+[11:16:17:496] [    1.084000] hub 1-0:1.0: USB hub found␍␊
+[11:16:17:496] [    1.088000] hub 1-0:1.0: 3 ports detected␍␊
+[11:16:17:502] [    1.092000] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)␍␊
+[11:16:17:706] [    1.296000] Core Release: 2.93a␍␊
+[11:16:17:710] [    1.300000] Setting default values for core params␍␊
+[11:16:17:731] [    1.304000] Finished setting default values for core params␍␊
+[11:16:17:812] [    1.404000] usb 1-1: new high-speed USB device number 2 using nxp-ehci␍␊
+[11:16:17:919] [    1.508000] Using Descriptor DMA mode␍␊
+[11:16:17:923] [    1.512000] Dedicated Tx FIFOs mode␍␊
+[11:16:17:943] [    1.516000] dwc_otg dwc_otg: DWC OTG Controller␍␊
+[11:16:17:943] [    1.520000] dwc_otg dwc_otg: new USB bus registered, assigned bus number 2␍␊
+[11:16:17:943] [    1.528000] dwc_otg dwc_otg: irq 49, io mem 0x00000000␍␊
+[11:16:17:943] [    1.532000] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002␍␊
+[11:16:17:958] [    1.540000] usb 1-1: New USB device found, idVendor=05e3, idProduct=0608␍␊
+[11:16:17:958] [    1.540000] usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0␍␊
+[11:16:17:965] [    1.540000] usb 1-1: Product: USB2.0 Hub␍␊
+[11:16:17:970] [    1.540000] hub 1-1:1.0: USB hub found␍␊
+[11:16:17:975] [    1.540000] hub 1-1:1.0: 4 ports detected␍␊
+[11:16:17:980] [    1.564000] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1␍␊
+[11:16:17:985] [    1.572000] usb usb2: Product: DWC OTG Controller␍␊
+[11:16:17:990] [    1.576000] usb usb2: Manufacturer: Linux 3.4.39-s5p4418 dwc_otg_hcd␍␊
+[11:16:17:995] [    1.584000] usb usb2: SerialNumber: dwc_otg␍␊
+[11:16:18:000] [    1.588000] hub 2-0:1.0: USB hub found␍␊
+[11:16:18:005] [    1.592000] hub 2-0:1.0: 1 port detected␍␊
+[11:16:18:009] [    1.596000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver␍␊
+[11:16:18:014] [    1.604000] nxp-ohci nxp-ohci: SLsi Synopsys OHCI Host Controller␍␊
+[11:16:18:019] [    1.608000] nxp-ohci nxp-ohci: new USB bus registered, assigned bus number 3␍␊
+[11:16:18:025] [    1.616000] nxp-ohci nxp-ohci: irq 50, io mem 0xc0020000␍␊
+[11:16:18:088] [    1.680000] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001␍␊
+[11:16:18:097] [    1.684000] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1␍␊
+[11:16:18:117] [    1.692000] usb usb3: Product: SLsi Synopsys OHCI Host Controller␍␊
+[11:16:18:117] [    1.700000] usb usb3: Manufacturer: Linux 3.4.39-s5p4418 ohci_hcd␍␊
+[11:16:18:117] [    1.704000] usb usb3: SerialNumber: nxp-ohci␍␊
+[11:16:18:129] [    1.708000] hub 3-0:1.0: USB hub found␍␊
+[11:16:18:129] [    1.712000] hub 3-0:1.0: 3 ports detected␍␊
+[11:16:18:129] [    1.716000] Initializing USB Mass Storage driver...␍␊
+[11:16:18:137] [    1.720000] usbcore: registered new interface driver usb-storage␍␊
+[11:16:18:142] [    1.728000] USB Mass Storage support registered.␍␊
+[11:16:18:146] [    1.732000] usbcore: registered new interface driver usbserial␍␊
+[11:16:18:151] [    1.740000] usbcore: registered new interface driver usbserial_generic␍␊
+[11:16:18:155] [    1.744000] USB Serial support registered for generic␍␊
+[11:16:18:160] [    1.748000] usbserial: USB Serial Driver core␍␊
+[11:16:18:165] [    1.756000] usbcore: registered new interface driver ftdi_sio␍␊
+[11:16:18:170] [    1.760000] USB Serial support registered for FTDI USB Serial Device␍␊
+[11:16:18:176] [    1.768000] ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver␍␊
+[11:16:18:182] [    1.772000] usbcore: registered new interface driver option␍␊
+[11:16:18:188] [    1.776000] USB Serial support registered for GSM modem (1-port)␍␊
+[11:16:18:198] [    1.784000] usbcore: registered new interface driver pl2303␍␊
+[11:16:18:200] [    1.788000] USB Serial support registered for pl2303␍␊
+[11:16:18:208] [    1.796000] g_ether gadget: using random self ethernet address␍␊
+[11:16:18:213] [    1.800000] usb0: MAC 66:4f:af:d7:25:37␍␊
+[11:16:18:218] [    1.804000] usb0: HOST MAC 82:cf:ce:fa:44:18␍␊
+[11:16:18:223] [    1.808000] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008␍␊
+[11:16:18:228] [    1.816000] g_ether gadget: g_ether ready␍␊
+[11:16:18:233] [    1.820000] mousedev: PS/2 mouse device common for all mice␍␊
+[11:16:18:238] [    1.824000] input: Nexell Keypad as /devices/platform/nxp-keypad/input/input0␍␊
+[11:16:18:243] [    1.832000] usbcore: registered new interface driver xpad␍␊
+[11:16:18:253] [    1.840000] input: ft5x0x_ts as /devices/virtual/input/input1␍␊
+[11:16:18:260] [    1.852000] read reg (0xa6) error, -11␍␊
+[11:16:18:268] [    1.856000] ft5x0x_ts 2-0038: chip not found␍␊
+[11:16:18:320] [    1.912000] ft5x0x_ts 2-0038: probe ft5x0x TouchScreen failed, -11␍␊
+[11:16:18:326] [    1.916000] ft5x0x_ts: probe of 2-0038 failed with error -11␍␊
+[11:16:18:340] [    1.924000] IT7260-ts 2-0046: Found chip ␍␊
+[11:16:18:340] [    1.928000] cannot identify the touch screen␍␊
+[11:16:18:348] [    1.932000] IT7260-ts: probe of 2-0046 failed with error -1␍␊
+[11:16:18:348] [    1.936000] i2c-core: driver [IT7260-ts] using legacy suspend method␍␊
+[11:16:18:354] [    1.944000] i2c-core: driver [IT7260-ts] using legacy resume method␍␊
+[11:16:18:360] [    1.952000] <<-GTP-INFO->> GTP driver installing...␍␊
+[11:16:18:365] [    1.956000] <<-GTP-INFO->> GTP Driver Version: V2.4<2014/11/28>␍␊
+[11:16:18:371] [    1.960000] <<-GTP-INFO->> GTP Driver Built@13:07:44, Mar 24 2018␍␊
+[11:16:18:377] [    1.968000] <<-GTP-INFO->> GTP I2C Address: 0x5d␍␊
+[11:16:18:386] [    1.972000] <<-GTP-INFO->> Guitar reset␍␊
+[11:16:18:449] [    2.040000] <<-GTP-ERROR->> I2C Read: 0x8047, 1 bytes failed, errcode: -11! Process reset.␍␊
+[11:16:18:457] [    2.048000] <<-GTP-INFO->> Guitar reset␍␊
+[11:16:18:524] [    2.116000] <<-GTP-ERROR->> GTP i2c test failed time 1.␍␊
+[11:16:18:549] [    2.136000] <<-GTP-ERROR->> I2C Read: 0x8047, 1 bytes failed, errcode: -11! Process reset.␍␊
+[11:16:18:553] [    2.144000] <<-GTP-INFO->> Guitar reset␍␊
+[11:16:18:620] [    2.212000] <<-GTP-ERROR->> GTP i2c test failed time 2.␍␊
+[11:16:18:646] [    2.232000] <<-GTP-ERROR->> I2C Read: 0x8047, 1 bytes failed, errcode: -11! Process reset.␍␊
+[11:16:18:649] [    2.240000] <<-GTP-INFO->> Guitar reset␍␊
+[11:16:18:716] [    2.308000] <<-GTP-ERROR->> GTP i2c test failed time 3.␍␊
+[11:16:18:736] [    2.328000] <<-GTP-ERROR->> I2C communication ERROR!␍␊
+[11:16:18:749] [    2.332000] himax_ts 2-0048: Unable to get DevId␍␊
+[11:16:18:749] [    2.336000] touchscreen-1wire⇥	initialized␍␊
+[11:16:18:757] [    2.340000] backlight-1wire⇥	initialized␍␊
+[11:16:18:757] [    2.344000] onewire: REQ 0x60: i2c read error -11␍␊
+[11:16:18:764] [    2.348000] input: fa_ts_input as /devices/virtual/input/input2␍␊
+[11:16:18:769] [    2.356000] ts-if⇥	initialized␍␊
+[11:16:18:769] [    2.360000] [RTC] day=2016.01.01 time=08:03:40␍␊
+[11:16:18:775] [    2.364000] nxp-rtc nxp-rtc.0: rtc core: registered nxp-rtc as rtc0␍␊
+[11:16:18:783] [    2.368000] i2c /dev entries driver␍␊
+[11:16:18:789] [    2.372000] lirc_dev: IR Remote Control driver registered, major 248 ␍␊
+[11:16:18:790] [    2.380000] IR NEC protocol handler initialized␍␊
+[11:16:18:795] [    2.384000] IR RC5(x) protocol handler initialized␍␊
+[11:16:18:800] [    2.388000] IR RC6 protocol handler initialized␍␊
+[11:16:18:805] [    2.396000] IR JVC protocol handler initialized␍␊
+[11:16:18:810] [    2.400000] IR Sony protocol handler initialized␍␊
+[11:16:18:814] [    2.404000] IR RC5 (streamzap) protocol handler initialized␍␊
+[11:16:18:819] [    2.408000] IR SANYO protocol handler initialized␍␊
+[11:16:18:824] [    2.412000] IR LIRC bridge handler initialized␍␊
+[11:16:18:829] [    2.420000] gspca_main: v2.14.0 registered␍␊
+[11:16:18:834] [    2.424000] ...................................ov5640_probe 2234␍␊
+[11:16:18:839] [    2.428000] ...................................ov5640_video_probe 2193␍␊
+[11:16:18:849] [    2.436000] ov5640 0-003c: reg_read: i2c read error, reg: 300a␍␊
+[11:16:18:851] [    2.440000] OV5640 read error!!!!!!!!!!!!!!!␍␊
+[11:16:18:856] [    2.444000] ov5640_initialize_ctrls.............1794...........␍␊
+[11:16:18:864] [    2.452000] usbcore: registered new interface driver uvcvideo␍␊
+[11:16:18:869] [    2.460000] USB Video Class driver (1.1.1)␍␊
+[11:16:18:874] [    2.464000] Driver for 1-wire Dallas network protocol.␍␊
+[11:16:18:878] [    2.468000] device-mapper: uevent: version 1.0.3␍␊
+[11:16:18:888] [    2.472000] device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com␍␊
+[11:16:18:896] [    2.484000] DVFS: ASV[0] IDS(10mA,  7) Ro(110, 95)␍␊
+[11:16:18:901] [    2.488000] DVFS: regulator vdd_arm_1.3V␍␊
+[11:16:18:906] [    2.492000] DVFS: cpu DVFS with PLL.1 [tables=8]␍␊
+[11:16:18:911] [    2.500000] cpuidle: using governor ladder␍␊
+[11:16:18:916] [    2.504000] cpuidle: using governor menu␍␊
+[11:16:18:920] [    2.508000] Synopsys Designware Multimedia Card Interface Driver␍␊
+[11:16:18:925] [    2.516000] dw_mmc dw_mmc.0: Using internal DMA controller.␍␊
+[11:16:18:934] [    2.520000] mmc0: no vmmc regulator found␍␊
+[11:16:18:935] [    2.524000] dw_mmc dw_mmc.0: Using external card detect irq 225 (io 161)␍␊
+[11:16:18:945] [    2.532000] dw_mmc dw_mmc.0: Version ID is 250a␍␊
+[11:16:18:947] [    2.536000] dw_mmc dw_mmc.0: DW MMC controller at irq 43, 32 bit host data width, 32 deep fifo hw timeout 500 ms␍␊
+[11:16:18:957] [    2.548000] mmc_host mmc0: Bus speed (slot 0) = 50000000Hz (slot req 400000Hz, actual 396825HZ div = 63)␍␊
+[11:16:18:967] [    2.556000] dw_mmc dw_mmc.1: Using internal DMA controller.␍␊
+[11:16:18:975] [    2.564000] mmc1: no vmmc regulator found␍␊
+[11:16:18:980] [    2.568000] dw_mmc dw_mmc.1: Version ID is 250a␍␊
+[11:16:18:985] [    2.572000] dw_mmc dw_mmc.1: DW MMC controller at irq 44, 32 bit host data width, 32 deep fifo hw timeout 500 ms␍␊
+[11:16:18:992] [    2.584000] dw_mmc dw_mmc.2: Using internal DMA controller.␍␊
+[11:16:19:002] [    2.588000] mmc2: no vmmc regulator found␍␊
+[11:16:19:007] [    2.592000] dw_mmc dw_mmc.2: Version ID is 250a␍␊
+[11:16:19:007] [    2.596000] dw_mmc dw_mmc.2: DW MMC controller at irq 45, 32 bit host data width, 32 deep fifo hw timeout 500 ms␍␊
+[11:16:19:018] [    2.604000] mmc_host mmc0: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)␍␊
+[11:16:19:027] [    2.604000] mmc0: new high speed SDHC card at address 1234␍␊
+[11:16:19:033] [    2.604000] mmcblk0: mmc0:1234 SA08G 7.24 GiB ␍␊
+[11:16:19:037] [    2.604000]  mmcblk0: p1␍␊
+[11:16:19:042] [    2.624000] mmc_host mmc1: Bus speed (slot 0) = 50000000Hz (slot req 400000Hz, actual 396825HZ div = 63)␍␊
+[11:16:19:054] [    2.640000] usbcore: registered new interface driver usbhid␍␊
+[11:16:19:061] [    2.648000] usbhid: USB HID core driver␍␊
+[11:16:19:065] [    2.652000] ADC: CHs 8, 200000(1000000 ~ 130208) sample rate, polling mode, scale=166(bit 6)␍␊
+[11:16:19:074] [    2.660000] snd pcm: register sound platform 'nxp-pcm'␍␊
+[11:16:19:080] [    2.668000] snd i2s: ch 0, master, iis mode, 48000(47999)hz, 32 FBITs, MCLK=12287980hz, RFS=256␍␊
+[11:16:19:085] [    2.672000] mmc_host mmc2: Bus speed (slot 0) = 100000000Hz (slot req 400000Hz, actual 400000HZ div = 125)␍␊
+[11:16:19:100] [    2.688000] mmc_host mmc2: device is being hw reset␍␊
+[11:16:19:178] [    2.768000] mmc_host mmc2: Bus speed (slot 0) = 100000000Hz (slot req 52000000Hz, actual 50000000HZ div = 1)␍␊
+[11:16:19:188] [    2.776000] mmc2: new high speed MMC card at address 0001␍␊
+[11:16:19:210] [    2.784000] mmcblk1: mmc2:0001 8WPD3R 7.28 GiB ␍␊
+[11:16:19:210] [    2.788000] mmcblk1boot0: mmc2:0001 8WPD3R partition 1 4.00 MiB␍␊
+[11:16:19:210] [    2.796000] mmcblk1boot1: mmc2:0001 8WPD3R partition 2 4.00 MiB␍␊
+[11:16:19:224] [    2.796000] ==enable jack switch for linux==␍␊
+[11:16:19:224] [    2.800000] asoc: ES8316 HiFi <-> nxp-i2s.0 mapping ok␍␊
+[11:16:19:224] [    2.800000] input: I2S-ES8316 Headphone Jack as /devices/platform/es8316-audio.0/sound/card0/input3␍␊
+[11:16:19:232] [    2.800000] spdif-tx: 48000(47348)Hz, MCLK=12121212hz HDMI out␍␊
+[11:16:19:237] [    2.800000] asoc: dit-hifi <-> nxp-spdif-tx mapping ok␍␊
+[11:16:19:242] [    2.804000] GACT probability NOT on␍␊
+[11:16:19:247] [    2.804000] Mirror/redirect action on␍␊
+[11:16:19:247] [    2.804000] u32 classifier␍␊
+[11:16:19:253] [    2.804000]     Actions configured␍␊
+[11:16:19:253] [    2.804000] Netfilter messages via NETLINK v0.30.␍␊
+[11:16:19:259] [    2.804000] nf_conntrack version 0.5.0 (12967 buckets, 51868 max)␍␊
+[11:16:19:264] [    2.804000] ctnetlink v0.93: registering with nfnetlink.␍␊
+[11:16:19:270] [    2.804000] NF_TPROXY: Transparent proxy support initialized, version 4.1.0␍␊
+[11:16:19:275] [    2.804000] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.␍␊
+[11:16:19:284] [    2.804000] xt_time: kernel timezone is -0000␍␊
+[11:16:19:290] [    2.804000] ip_tables: (C) 2000-2006 Netfilter Core Team␍␊
+[11:16:19:294] [    2.804000] arp_tables: (C) 2002 David S. Miller␍␊
+[11:16:19:299] [    2.804000] TCP: cubic registered␍␊
+[11:16:19:299] [    2.804000] Initializing XFRM netlink socket␍␊
+[11:16:19:305] [    2.804000] NET: Registered protocol family 10␍␊
+[11:16:19:310] [    2.804000] Mobile IPv6␍␊
+[11:16:19:310] [    2.804000] ip6_tables: (C) 2000-2006 Netfilter Core Team␍␊
+[11:16:19:316] [    2.804000] IPv6 over IPv4 tunneling driver␍␊
+[11:16:19:321] [    2.804000] NET: Registered protocol family 17␍␊
+[11:16:19:325] [    2.804000] NET: Registered protocol family 15␍␊
+[11:16:19:330] [    2.804000] NET: Registered protocol family 35␍␊
+[11:16:19:335] [    2.804000] Registering the dns_resolver key type␍␊
+[11:16:19:340] [    2.804000] Registering SWP/SWPB emulation handler␍␊
+[11:16:19:344] [    2.808000] axp22_dcdc5: incomplete constraints, leaving on␍␊
+[11:16:19:349] [    2.808000] axp22_dcdc4: incomplete constraints, leaving on␍␊
+[11:16:19:354] [    2.812000] axp22_dcdc3: incomplete constraints, leaving on␍␊
+[11:16:19:359] [    2.812000] axp22_dcdc2: incomplete constraints, leaving on␍␊
+[11:16:19:368] [    2.812000] axp22_dcdc1: incomplete constraints, leaving on␍␊
+[11:16:19:370] [    2.812000] axp22_dc5ldo: incomplete constraints, leaving on␍␊
+[11:16:19:376] [    2.816000] axp22_eldo2: incomplete constraints, leaving on␍␊
+[11:16:19:381] [    2.816000] axp22_eldo1: incomplete constraints, leaving on␍␊
+[11:16:19:387] [    2.820000] axp22_dldo1: incomplete constraints, leaving on␍␊
+[11:16:19:392] [    2.820000] axp22_aldo3: incomplete constraints, leaving on␍␊
+[11:16:19:398] [    2.820000] axp22_aldo2: incomplete constraints, leaving on␍␊
+[11:16:19:406] [    2.820000] axp22_aldo1: incomplete constraints, leaving on␍␊
+[11:16:19:411] [    2.824000] axp22_ldo1: incomplete constraints, leaving on␍␊
+[11:16:19:416] [    2.824000] otg_wakelock_init: No USB transceiver found␍␊
+[11:16:19:421] [    3.008000] nxp-rtc nxp-rtc.0: setting system clock to 2016-01-01 08:03:41 UTC (1451635421)␍␊
+[11:16:19:428] [    3.012000]  mmcblk1: p1 p2 p3 p4 < p5 p6 p7 >␍␊
+[11:16:19:432] [    3.016000]  mmcblk1boot1: unknown partition table␍␊
+[11:16:19:440] [    3.016000]  mmcblk1boot0: unknown partition table␍␊
+[11:16:19:445] [    3.032000] TMU: register adc.2 to hwmon␍␊
+[11:16:19:450] [    3.036000] ALSA device list:␍␊
+[11:16:19:450] [    3.040000]   #0: I2S-ES8316␍␊
+[11:16:19:456] [    3.044000]   #1: SPDIF-Transciever␍␊
+[11:16:19:466] [    3.056000] JBD2: Unrecognised features on journal␍␊
+[11:16:19:474] [    3.060000] EXT4-fs (mmcblk0p1): error loading journal␍␊
+[11:16:19:516] [    3.108000] List of all partitions:␍␊
+[11:16:19:520] [    3.108000] b300         7598080 mmcblk0  driver: mmcblk␍␊
+[11:16:19:539] [    3.116000]   b301         7597056 mmcblk0p1 00000000-0000-0000-0000-000000000000␍␊
+[11:16:19:539] [    3.124000] b308         7634944 mmcblk1  driver: mmcblk␍␊
+[11:16:19:539] [    3.128000]   b309           65536 mmcblk1p1 00000000-0000-0000-0000-000000000000␍␊
+[11:16:19:556] [    3.136000]   b30a          772096 mmcblk1p2 00000000-0000-0000-0000-000000000000␍␊
+[11:16:19:556] [    3.144000]   b30b          438272 mmcblk1p3 00000000-0000-0000-0000-000000000000␍␊
+[11:16:19:563] [    3.152000]   b30c               1 mmcblk1p4 00000000-0000-0000-0000-000000000000␍␊
+[11:16:19:568] [    3.156000]   b30d            8192 mmcblk1p5 00000000-0000-0000-0000-000000000000␍␊
+[11:16:19:575] [    3.164000]   b30e           22528 mmcblk1p6 00000000-0000-0000-0000-000000000000␍␊
+[11:16:19:582] [    3.172000]   b30f         6324224 mmcblk1p7 00000000-0000-0000-0000-000000000000␍␊
+[11:16:19:594] [    3.180000] b318            4096 mmcblk1boot1  (driver?)␍␊
+[11:16:19:598] [    3.184000] b310            4096 mmcblk1boot0  (driver?)␍␊
+[11:16:19:603] [    3.192000] No filesystem could mount root, tried:  ext4␍␊
+[11:16:19:608] [    3.196000] Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(179,1)␍␊
+[11:16:19:614] [    3.204000] [<c00154dc>] (unwind_backtrace+0x0/0x12c) from [<c05e790c>] (panic+0x9c/0x1d4)␍␊
+[11:16:19:626] [    3.212000] [<c05e790c>] (panic+0x9c/0x1d4) from [<c07fae58>] (mount_block_root+0x210/0x220)␍␊
+[11:16:19:634] [    3.220000] [<c07fae58>] (mount_block_root+0x210/0x220) from [<c07faf70>] (mount_root+0x108/0x110)␍␊
+[11:16:19:640] [    3.232000] [<c07faf70>] (mount_root+0x108/0x110) from [<c07fb0d0>] (prepare_namespace+0x158/0x19c)␍␊
+[11:16:19:649] [    3.240000] [<c07fb0d0>] (prepare_namespace+0x158/0x19c) from [<c07faab0>] (kernel_init+0x228/0x230)␍␊
+[11:16:19:663] [    3.248000] [<c07faab0>] (kernel_init+0x228/0x230) from [<c000f86c>] (kernel_thread_exit+0x0/0x8)␍␊
+[11:16:19:667] [    3.256000] CPU0: stopping␍␊
+[11:16:19:672] [    3.260000] [<c00154dc>] (unwind_backtrace+0x0/0x12c) from [<c0014140>] (handle_IPI+0x1d0/0x1e4)␍␊
+[11:16:19:678] [    3.268000] [<c0014140>] (handle_IPI+0x1d0/0x1e4) from [<c0008564>] (gic_handle_irq+0x54/0x58)␍␊
+[11:16:19:687] [    3.276000] [<c0008564>] (gic_handle_irq+0x54/0x58) from [<c000e940>] (__irq_svc+0x40/0x70)␍␊
+[11:16:19:699] [    3.284000] Exception stack(0xc0835c80 to 0xc0835cc8)␍␊
+[11:16:19:704] [    3.292000] 5c80: c0800000 0000160d 00000000 00000000 000b06e0 00000000 2c1b8100 00000000␍␊
+[11:16:19:709] [    3.300000] 5ca0: c11e7a00 00000000 c084ab1c 00000004 00020000 c0835ccc c007a560 c0292090␍␊
+[11:16:19:720] [    3.308000] 5cc0: 80000113 ffffffff␍␊
+[11:16:19:720] [    3.312000] [<c000e940>] (__irq_svc+0x40/0x70) from [<c0292090>] (__do_div64+0x74/0xe8)␍␊
+[11:16:19:733] [    3.320000] [<c0292090>] (__do_div64+0x74/0xe8) from [<c007a560>] (scale_rt_power+0x8c/0xa0)␍␊
+[11:16:19:736] [    3.328000] [<c007a560>] (scale_rt_power+0x8c/0xa0) from [<c007a660>] (update_group_power+0xec/0x168)␍␊
+[11:16:19:750] [    3.336000] [<c007a660>] (update_group_power+0xec/0x168) from [<c007a9e8>] (find_busiest_group+0x30c/0xbac)␍␊
+[11:16:19:755] [    3.344000] [<c007a9e8>] (find_busiest_group+0x30c/0xbac) from [<c007b378>] (load_balance+0xf0/0x72c)␍␊
+[11:16:19:765] [    3.356000] [<c007b378>] (load_balance+0xf0/0x72c) from [<c007ba9c>] (rebalance_domains+0xe8/0x200)␍␊
+[11:16:19:774] [    3.364000] [<c007ba9c>] (rebalance_domains+0xe8/0x200) from [<c007bc94>] (run_rebalance_domains+0xe0/0x12c)␍␊
+[11:16:19:788] [    3.372000] [<c007bc94>] (run_rebalance_domains+0xe0/0x12c) from [<c004a72c>] (__do_softirq+0xc4/0x22c)␍␊
+[11:16:19:793] [    3.384000] [<c004a72c>] (__do_softirq+0xc4/0x22c) from [<c004ad18>] (irq_exit+0x90/0x94)␍␊
+[11:16:19:806] [    3.392000] [<c004ad18>] (irq_exit+0x90/0x94) from [<c0014090>] (handle_IPI+0x120/0x1e4)␍␊
+[11:16:19:813] [    3.400000] [<c0014090>] (handle_IPI+0x120/0x1e4) from [<c0008564>] (gic_handle_irq+0x54/0x58)␍␊
+[11:16:19:818] [    3.408000] [<c0008564>] (gic_handle_irq+0x54/0x58) from [<c000e940>] (__irq_svc+0x40/0x70)␍␊
+[11:16:19:830] [    3.416000] Exception stack(0xc0835f58 to 0xc0835fa0)␍␊
+[11:16:19:836] [    3.420000] 5f40:                                                       ffffffed 00000000␍␊
+[11:16:19:842] [    3.428000] 5f60: 00a69000 00000000 c08b3688 c05f3450 c0834000 c0834000 c0852fb8 c0834028␍␊
+[11:16:19:853] [    3.436000] 5f80: c0834000 00000000 01000000 c0835fa0 c000f92c c000f930 60000013 ffffffff␍␊
+[11:16:19:856] [    3.444000] [<c000e940>] (__irq_svc+0x40/0x70) from [<c000f930>] (default_idle+0x2c/0x30)␍␊
+[11:16:19:864] [    3.456000] [<c000f930>] (default_idle+0x2c/0x30) from [<c000fc8c>] (cpu_idle+0xdc/0x108)␍␊
+[11:16:19:872] [    3.464000] [<c000fc8c>] (cpu_idle+0xdc/0x108) from [<c07fa87c>] (start_kernel+0x350/0x35c)␍␊
+[11:16:19:880] [    3.472000] [<c07fa87c>] (start_kernel+0x350/0x35c) from [<40008044>] (0x40008044)␍␊
+[11:16:19:888] [    3.480000] CPU3: stopping␍␊
+[11:16:19:893] [    3.480000] [<c00154dc>] (unwind_backtrace+0x0/0x12c) from [<c0014140>] (handle_IPI+0x1d0/0x1e4)␍␊
+[11:16:19:899] [    3.488000] [<c0014140>] (handle_IPI+0x1d0/0x1e4) from [<c0008564>] (gic_handle_irq+0x54/0x58)␍␊
+[11:16:19:908] [    3.500000] [<c0008564>] (gic_handle_irq+0x54/0x58) from [<c000e940>] (__irq_svc+0x40/0x70)␍␊
+[11:16:19:920] [    3.508000] Exception stack(0xe30a1f88 to 0xe30a1fd0)␍␊
+[11:16:19:926] [    3.512000] 1f80:                   ffffffed 00000003 00a84000 00000000 c08b3688 c05f3450␍␊
+[11:16:19:932] [    3.520000] 1fa0: e30a0000 e30a0000 c0852fb8 e30a0018 e30a0000 00000000 01000000 e30a1fd0␍␊
+[11:16:19:938] [    3.528000] 1fc0: c000f92c c000f930 60000013 ffffffff␍␊
+[11:16:19:943] [    3.532000] [<c000e940>] (__irq_svc+0x40/0x70) from [<c000f930>] (default_idle+0x2c/0x30)␍␊
+[11:16:19:951] [    3.540000] [<c000f930>] (default_idle+0x2c/0x30) from [<c000fc8c>] (cpu_idle+0xdc/0x108)␍␊
+[11:16:19:963] [    3.548000] [<c000fc8c>] (cpu_idle+0xdc/0x108) from [<40008168>] (0x40008168)␍␊
+[11:16:19:968] [    3.556000] CPU1: stopping␍␊
+[11:16:19:974] [    3.560000] [<c00154dc>] (unwind_backtrace+0x0/0x12c) from [<c0014140>] (handle_IPI+0x1d0/0x1e4)␍␊
+[11:16:19:980] [    3.568000] [<c0014140>] (handle_IPI+0x1d0/0x1e4) from [<c0008564>] (gic_handle_irq+0x54/0x58)␍␊
+[11:16:19:986] [    3.576000] [<c0008564>] (gic_handle_irq+0x54/0x58) from [<c000e940>] (__irq_svc+0x40/0x70)␍␊
+[11:16:19:994] [    3.584000] Exception stack(0xe306ff88 to 0xe306ffd0)␍␊
+[11:16:20:000] [    3.588000] ff80:                   ffffffed 00000001 00a72000 00000000 c08b3688 c05f3450␍␊
+[11:16:20:011] [    3.596000] ffa0: e306e000 e306e000 c0852fb8 e306e018 e306e000 00000000 01000000 e306ffd0␍␊
+[11:16:20:017] [    3.608000] ffc0: c000f92c c000f930 60000013 ffffffff␍␊
+[11:16:20:022] [    3.612000] [<c000e940>] (__irq_svc+0x40/0x70) from [<c000f930>] (default_idle+0x2c/0x30)␍␊
+[11:16:20:034] [    3.620000] [<c000f930>] (default_idle+0x2c/0x30) from [<c000fc8c>] (cpu_idle+0xdc/0x108)␍␊
+[11:16:20:037] [    3.628000] [<c000fc8c>] (cpu_idle+0xdc/0x108) from [<40008168>] (0x40008168)␍␊
+[11:16:20:044] [    3.636000] Rebooting in 5 seconds..
